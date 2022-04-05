@@ -1,0 +1,36 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test",
+    "start": "webpack serve --mode development",
+    "start-prod": "webpack serve --mode production",
+    "start-foo-dev": "webpack serve ./foo/src --mode development",
+    "start-foo-prod": "webpack serve ./foo/src --mode production",
+    "build": "webpack",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "dev-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+    "prod-foo": "webpack --mode production --entry ./foo/src/index.js --output-path ./foo/dist"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "luis.mosquera",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.0"
+  }
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";var l;(l=console).log.apply(l,[1,2,3,4])})();
